@@ -1,3 +1,4 @@
+from database.db import db
 class Users:
     def __init__(self, nom:str,emai:str,password:str,role:str) -> None: #constructeur
         self._nom = nom
@@ -31,4 +32,15 @@ class Users:
         
     def printUser(self):
         return f"Nom: {self._nom}, Email: {self._email}, Role: {self._role}"
+    
+    def save(self):
+        user_table = db.table('Users')
+        id=len(user_table)+1
+        user_table.insert({
+            'id': id,
+            'name': self.nom,
+            'email': self.email,
+            'password': self.password,
+           
+        })
     

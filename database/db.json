@@ -1,0 +1,104 @@
+{
+    "Users": {
+        "1": {
+            "id": 1,
+            "nom": "John Doe",
+            "password": "password123",
+            "email": "johndoe@example.com",
+            "role": "teacher",
+            "grade": "A",
+            "salaire": 5000
+        },
+        "2": {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "janesmith@example.com",
+            "password": "password456",
+            "role": "student",
+            "maticule": "B23",
+            "montant": 20003000
+        },
+        "3": {
+            "id": 3,
+            "name": "Bob Johnson",
+            "email": "bobjohnson@example.com",
+            "password": "password789",
+            "role": "teacher",
+            "grade": "B",
+            "salaire": 4000
+        },
+        "4": {
+            "id": 4,
+            "name": "Alice Brown",
+            "email": "alicebrown@example.com",
+            "password": "password012",
+            "role": "student",
+            "maticule": "C45",
+            "montant": 30003000
+        },
+        "5": {
+            "id": 5,
+            "nom": "FUFU",
+            "email": "FUFU@gmail.com",
+            "password": "1234",
+            "role": "Teacher",
+            "salaire": 500000,
+            "grade": "IT"
+        },
+        "6": {
+            "id": 6,
+            "nom": "BAILA",
+            "email": "BAILA@gmail.com",
+            "password": "1234",
+            "role": "Teacher",
+            "salaire": 500000,
+            "grade": "IT"
+        },
+        "7": {
+            "id": 7,
+            "nom": "TOTO",
+            "email": "TOTO@gmail.com",
+            "password": "1234",
+            "role": "Student",
+            "matricule": "MAT001",
+            "montant": 500000
+        },
+        "8": {
+            "id": 8,
+            "nom": "TATA",
+            "email": "TATA@gmail.com",
+            "password": "1234",
+            "role": "Student",
+            "matricule": "MAT002",
+            "montant": 500000
+        }
+    },
+    "Lessons": {
+        "1": {
+            "id": 1,
+            "name": "Maths",
+            "teacher_id": 1,
+            "students": [
+                2,
+                4
+            ]
+        },
+        "2": {
+            "id": 2,
+            "name": "Science",
+            "teacher_id": 3,
+            "students": [
+                2,
+                4
+            ]
+        },
+        "3": {
+            "id": 3,
+            "name": "History",
+            "teacher_id": 1,
+            "students": [
+                4
+            ]
+        }
+    }
+}
